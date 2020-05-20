@@ -4,14 +4,14 @@ import 'firebase/database';
 import 'firebase/storage';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAiFra3hmMEore7QNZdZSUG0h3q3NUKg4I",
-    authDomain: "meetnewfriends-6e495.firebaseapp.com",
-    databaseURL: "https://meetnewfriends-6e495.firebaseio.com",
-    projectId: "meetnewfriends-6e495",
-    storageBucket: "meetnewfriends-6e495.appspot.com",
+    apiKey: "AIzaSyDfev_GZTnvHiagf_hhFnssZCV9W0V5nfw",
+    authDomain: "travis-meetnewfriends.firebaseapp.com",
+    databaseURL: "https://travis-meetnewfriends.firebaseio.com",
+    projectId: "travis-meetnewfriends",
+    storageBucket: "travis-meetnewfriends.appspot.com",
     messagingSenderId: "34155896062",
-    appId: "1:34155896062:web:36d0f8b4d5ca94abc899af",
-    measurementId: "G-WC91Q8GSP0",
+    // appId: "1:34155896062:web:36d0f8b4d5ca94abc899af",
+    // measurementId: "G-WC91Q8GSP0",
 };
 
 firebase.initializeApp(firebaseConfig);

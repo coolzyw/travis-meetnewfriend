@@ -1,4 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to deploy
+public folder: build <br/>
+single app: yes <br/>
+overwrite index.html: no <br>
+No for other answers.
 
 ## Available Scripts
 
