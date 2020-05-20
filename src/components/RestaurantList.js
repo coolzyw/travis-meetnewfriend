@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Restaurant from './Restaurant/Restaurant';
 import Preference from "./Preference/Preference";
 import TagFilter from "./TagFilter/TagFilter"
-import MealFilter from "./MealFilter"
+// import MealFilter from "./MealFilter"
 
 
 
@@ -20,7 +20,7 @@ const RestaurantList = ({ name, events, people }) => {
 
         let meal = null;
         let times = duration.split("-");
-        
+
         let startTime = times[0];
         let endTime = times[1];
 
@@ -58,7 +58,7 @@ const RestaurantList = ({ name, events, people }) => {
     const ANDMatch = event => cuisine === event.cuisine;
     const tagMatch = event => tag === event.tag;
     const mealMatch = event => mealselection=== matchMeal(event.time)[0];
-    
+
 
     const matchedRestaurants = (events) => {
         if ((cuisine === 'Pick Cuisine' || cuisine === "All") && (tag === "Pick Tag" || tag === "All") && (mealselection==="Pick Meal"|| mealselection==="All")) {
@@ -70,7 +70,7 @@ const RestaurantList = ({ name, events, people }) => {
             Object.values(events).forEach(value => arr.push(value));
 
 
-            
+
             if (cuisine === 'Pick Cuisine' || cuisine === "All" ){
 
                 if((tag === "Pick Tag" || tag === "All")){
@@ -85,7 +85,7 @@ const RestaurantList = ({ name, events, people }) => {
                         return arr.filter(tagMatch).filter(mealMatch);
                     }
                 }
-                
+
             }
 
             else if (tag === "Pick Tag" || tag === "All"){
@@ -109,7 +109,7 @@ const RestaurantList = ({ name, events, people }) => {
             else{
                 return arr.filter(ANDMatch).filter(tagMatch).filter(mealMatch);
             }
-           
+
         }
     };
 
@@ -132,7 +132,7 @@ const RestaurantList = ({ name, events, people }) => {
             <TagFilter state={{ tag, setTag }} />
             <MealFilter state={{mealselection,setMealSelected}} />
             </div>
-            
+
 
                 <div className='restaurant-list'>
                     {availableWords(matchedRestaurants(events))}
