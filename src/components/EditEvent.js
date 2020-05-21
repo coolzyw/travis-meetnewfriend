@@ -119,9 +119,10 @@ const EditEvent = (props) => {
         register({ name: "date" }, { required: true });
         register({ name: "time-start" }, { required: true });
         register({ name: "time-end" }, { required: true });
-        setValue("time-start", starts)
-        setValue("time-end", ends)
-    }, []);
+        setValue("time-start", starts);
+        setValue("time-end", ends);
+        setValue("date", date);
+    }, [register, setValue, starts, ends, date]);
 
 
 
