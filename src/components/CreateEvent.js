@@ -18,7 +18,7 @@ const CreateEvent = (host, props) => {
 
     const [pictures, setPictures] = useState([]);
     const [date, setDate] = useState(new Date());
-    const [time, setTime] = useState(moment());
+    // const [time, setTime] = useState(moment());
     const [url, setURL] = useState("");
 
     const now = moment();
@@ -99,7 +99,7 @@ const CreateEvent = (host, props) => {
         register({ name: "date" }, { required: true });
         register({ name: "time-start" }, { required: true });
         register({ name: "time-end" }, { required: true });
-    }, []);
+    }, [register]);
 
     const party_size = [];
 
@@ -187,7 +187,7 @@ const CreateEvent = (host, props) => {
                                         showSecond={false}
                                         inputReadOnly
                                         onChange={val => {
-                                            setTime(val);
+                                            // setTime(val);
                                             setValue("time-start", val);// Here we are setting the value for the registered input.
                                         }}
                                     />
@@ -207,7 +207,7 @@ const CreateEvent = (host, props) => {
                                         showSecond={false}
                                         inputReadOnly
                                         onChange={val => {
-                                            setTime(val);
+                                            // setTime(val);
                                             setValue("time-end", val);// Here we are setting the value for the registered input.
                                         }}
                                     />
