@@ -4,7 +4,6 @@ import { firebase } from '../../../src/shared/firebase.js'
 import "firebase/storage";
 import GuestListPopup from '../GuestListPopup';
 import JoinButton from "../JoinButton";
-// import ViewList from '../ViewList';
 import EditPopUp from "../EditPopUp";
 import { confirmAlert } from 'react-confirm-alert';
 
@@ -66,10 +65,6 @@ const Restaurant = ({ name, event, people }) => {
                 // console.log("error");
             });
     }, [image, setImage]);
-
-    const handleJoin = () => {
-        setJoined(!joined);
-    };
 
     const timeInfo = matchMeal(event["time"]);
 

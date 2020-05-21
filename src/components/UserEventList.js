@@ -1,9 +1,5 @@
-import { Button } from "rbx";
-import React, { useState } from 'react';
+import React from 'react';
 import Restaurant from './Restaurant/Restaurant';
-import Preference from "./Preference/Preference";
-import TagFilter from "./TagFilter/TagFilter";
-import { BrowserRouter as Link } from "react-router-dom";
 
 
 
@@ -34,8 +30,6 @@ const UserEventList = ({ name, events, people }) => {
 
     console.log(hostedRestaurants(events))
 
-    const hR = hostedRestaurants(events);
-
     return (
         <React.Fragment>
               <div className="col-md-6 restaurant-info" alt="Max-width 100%">
@@ -51,7 +45,7 @@ const UserEventList = ({ name, events, people }) => {
                   </ul>
                   <hr></hr>
               </div>
-  
+
               <div className="col-md-6 restaurant-info" alt="Max-width 100%">
                   <h3>Events you've joined</h3>
                   <ul>
@@ -64,7 +58,7 @@ const UserEventList = ({ name, events, people }) => {
                       }
                   </ul>
               </div>
-                  
+
          </React.Fragment>
     );
 };
