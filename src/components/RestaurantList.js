@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Restaurant from './Restaurant/Restaurant';
 import Preference from "./Preference/Preference";
 import TagFilter from "./TagFilter/TagFilter"
-// import MealFilter from "./MealFilter"
+import MealFilter from "./MealFilter"
 
 
 
