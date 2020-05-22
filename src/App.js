@@ -48,7 +48,7 @@ const App = () => {
 					<React.Fragment>
 						<div className="view_create">
 							<Link to="/events">
-								<button class="button" type="button">
+								<button className="button" type="button">
 									View My Events
                   				</button>
 							</Link>
