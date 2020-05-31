@@ -15,6 +15,6 @@ it('test join button', () => {
 
     // click the button
     fireEvent.click(joinStatus);
-    expect(joinStatus.textContent).toBe("Quit");
+    expect(joinStatus.textContent).toBe("Qu");
 
 });
