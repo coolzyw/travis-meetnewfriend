@@ -8,8 +8,13 @@ it('test join button', () => {
     groupSize: "5/10",
     id: "15",
     name: "Yiwei Zhang"};
-  const { container } = render(<JoinButton {...props} />);
-  console.log(container);
-  const joinStatus = getByTestId(container, "join");
-  expect(joinStatus.textContent).toBe("Join");
+    const { container } = render(<JoinButton {...props} />);
+    console.log(container);
+    const joinStatus = getByTestId(container, "join");
+    expect(joinStatus.textContent).toBe("Join");
+
+    // click the button
+    fireEvent.click(joinStatus);
+    expect(joinStatus.textContent).toBe("Quit");
+
 });
