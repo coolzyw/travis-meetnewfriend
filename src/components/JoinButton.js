@@ -49,8 +49,8 @@ const JoinButton = (props) => {
 
     console.log(props);
 
-    const [group, setGroup] = useState(grop);
-    const [value, setValue] = useState((checkIfExisting(username, group)) ? "Quit" : "Join");
+    // const [group, setGroup] = useState(grop);
+    // const [value, setValue] = useState((checkIfExisting(username, group)) ? "Quit" : "Join");
 
 
 
