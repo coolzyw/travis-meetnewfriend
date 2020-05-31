@@ -47,6 +47,8 @@ const JoinButton = (props) => {
     let grop = props["group"]
     const username = props["name"]
 
+    console.log(props);
+
     const [group, setGroup] = useState(grop);
     const [value, setValue] = useState((checkIfExisting(username, group)) ? "Quit" : "Join");
 
@@ -168,7 +170,7 @@ const JoinButton = (props) => {
 
 
     return (
-        <Button
+        <Button data-testid="join"
             id={'button-state-' + value}
             onClick={() => Clicking()} disabled={username === null || (MaxReached() && value === "Join")}>
             {value}
