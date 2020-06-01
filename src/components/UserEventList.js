@@ -33,7 +33,7 @@ const UserEventList = ({ name, events, people }) => {
     return (
         <React.Fragment>
               <div className="col-md-6 restaurant-info" alt="Max-width 100%">
-                  <h3>Events you're hosting</h3>
+                  <h3 data-cy="title">Events you're hosting</h3>
                   <ul>
                       {
                       Object.values(hostedRestaurants(events)).map((e) => {
